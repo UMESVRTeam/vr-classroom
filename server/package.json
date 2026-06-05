@@ -1,0 +1,26 @@
+{
+  "name": "nsfvr-project07",
+  "version": "1.0.0",
+  "description": "Multiplayer VR Classroom",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently --kill-others --names \"VITE,SERVER\" --prefix-colors \"blue.bold,green.bold\" \"npm run dev:vite\" \"npm run dev:server\"",
+    "dev:vite": "vite",
+    "dev:server": "node --watch server.js",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^4.19.2",
+    "livekit-client": "^2.18.9",
+    "livekit-server-sdk": "^2.15.2",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.8.3",
+    "three": "^0.184.0",
+    "three-mesh-ui": "^6.5.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "vite": "^8.0.10"
+  }
+}
